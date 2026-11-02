@@ -875,6 +875,11 @@
     @keyframes marquee-roll { to { transform: translateX(-50%); } }
     .marquee:hover .marquee-track { animation-play-state: paused; }
 
+    @media (max-width: 820px) {
+      .hero { grid-template-columns: minmax(0, 1fr); }
+      .hero > div:first-child { min-width: 0; }
+    }
+
     @media (max-width: 700px) {
       .portrait-avatar { width: min(190px, 70%); height: min(238px, 78%); }
       .music-toggle { right: 14px; bottom: 14px; }
